@@ -33,7 +33,7 @@ const Navbar = () => {
           </li>
         ))}
         <a
-          href="../src/assets/Shoaib_Shamrez_CV.docx.pdf"
+          href="../src/assets/Shoaib_Shamrez_CV.pdf"
           target="_blank"
           className="bg-green-500 px-4 py-2 rounded-md hover:bg-green-600 transition text-center md:ml-4"
         >
