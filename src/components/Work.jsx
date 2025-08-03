@@ -4,9 +4,39 @@ import githubIcon from "../assets/github.svg";
 
 const Work = () => {
   return (
-    <section id="work" className="min-h-screen bg-darkBg text-lightText scroll-mt-16 flex flex-col items-center p-10 mt-12">
+    <section
+      id="work"
+      className="min-h-screen bg-darkBg text-lightText scroll-mt-16 flex flex-col items-center p-10 mt-12"
+    >
       <h2 className="text-4xl font-bold mb-6">My Work</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <ProjectCard
+          title="TaskFlow - Task Management App"
+          description="A full-stack Kanban-style task management application built with React, Node.js, Express, MongoDB, and TailwindCSS.
+          It allows users to manage projects, boards, tasks, columns, and team members with an intuitive drag-and-drop interface."
+          link="https://github.com/shoaibch05/TaskFlow"
+          github="https://github.com/shoaibch05/TaskFlow"
+          technologies={[
+            "MERN",
+            "POSTMAN",
+            "@hello-pangea/dnd",
+            "JWT Authentication",
+            "Tailwind CSS",
+          ]}
+        />
+        <ProjectCard
+          title="Piano Trainer - Chrome Extension"
+          description="Piano Trainer is a Chrome Extension that helps users play a virtual piano and learn songs directly in the browser. It's built with React and Vite, and packaged as a web extension using vite-plugin-web-extension."
+          link="https://github.com/shoaibch05/Piano-Trainer"
+          github="https://github.com/shoaibch05/Piano-Trainer"
+          technologies={[
+            "React.js",
+            "Vite",
+            "vite-plugin-web-extension",
+            "CSS",
+            "Soundfont-Player",
+          ]}
+        />
         <ProjectCard
           title="React Chat Application (GupShup)"
           description="Built a chat application using React.js and Firebase with authentication and room management."
@@ -32,7 +62,7 @@ const Work = () => {
           title="Waste Management Website"
           description="Developed a PHP & MySQL-based website for scheduling waste pickups with an admin panel."
           github="https://github.com/shoaibch05/ces.git"
-          technologies={["HTML","CSS", "PHP", "MySQL", "Bootstrap"]}
+          technologies={["HTML", "CSS", "PHP", "MySQL", "Bootstrap"]}
         />
         <ProjectCard
           title="Arra Group Website (WordPress)"
@@ -74,11 +104,22 @@ const ProjectCard = ({ title, description, link, github, technologies }) => {
       </div>
       <div className="flex gap-4 mt-auto">
         {link && (
-          <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-400">Live Demo</a>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400"
+          >
+            Live Demo
+          </a>
         )}
         {github && (
           <a href={github} target="_blank" rel="noopener noreferrer">
-            <img src={githubIcon} alt="GitHub" className="w-6 h-6 inline-block" />
+            <img
+              src={githubIcon}
+              alt="GitHub"
+              className="w-6 h-6 inline-block"
+            />
           </a>
         )}
       </div>
