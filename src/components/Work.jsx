@@ -14,7 +14,7 @@ const Work = () => {
           title="TaskFlow - Task Management App"
           description="A full-stack Kanban-style task management application built with React, Node.js, Express, MongoDB, and TailwindCSS.
           It allows users to manage projects, boards, tasks, columns, and team members with an intuitive drag-and-drop interface."
-          link="https://github.com/shoaibch05/TaskFlow"
+          link="https://task-flow-civc.vercel.app/"
           github="https://github.com/shoaibch05/TaskFlow"
           technologies={[
             "MERN",
